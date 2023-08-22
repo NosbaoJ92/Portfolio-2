@@ -11,52 +11,55 @@
 </head>
 <body class="corpo w-full h-full overflow-visible relative bg-fixed bg-top bg-no-repeat overflow-x-hidden" style="background-image: url(/src/img/background.png)">
     <section id="sec1" class="sec1 w-full h-full p-6 bg-fixed bg-right bg-no-repeat min-[768px]:p-16" style="background-image: url(/src/img/retrato.png)">
-        <div class="container-sup w-full h-full flex flex-col justify-between relative border p-4">
+        <div class="container-sup w-full h-full flex flex-col justify-between relative p-4">
             <div class="textos-sup">
                 <h3 class="portifolio text-lime-400 text-xl font-semibold min-[768px]:text-3xl min-[1024px]:text-4xl min-[1024px]:font-bold">PORTFÓLIO</h3>
                 <h1 class="text-white text-4xl font-bold min-[768px]:text-6xl min-[1024px]:text-8xl">JOABSON <br> NOGUEIRA</h1>
             </div>
             <div class="links-end flex flex-col gap-10 pb-16 min-[768px]:pb-28 min-[1024px]:">
-                <div class="curriculum flex flex-col justify-center items-center border gap-2">
+                <div class="curriculum flex flex-col justify-center items-center gap-2">
                     <a href="/src/docs/Curriculo - Joabson Nogueira de Oliveira.pdf" class="BtnCurriculum flex justify-center items-center bg-slate-50 w-56 h-16 hover:-translate-y-1 transition-all hover:border border-slate-950 hover:delay-75 hover:bg-lime-400 ease-in" download>
                         <p class="text-xl font-semibold">CURRICULUM</p>
                     </a>
                     <a href="#sec4" class="text-white font-semibold">CONTATO</a>
                 </div>
-                <div class="links-social flex justify-center gap-3 border min-[1024px]:absolute min-[1024px]:bottom-4 ">
+                <div class="links-social flex justify-center gap-3 min-[1024px]:absolute min-[1024px]:bottom-4 ">
                     <a href="https://www.linkedin.com/in/joabson-nogueira-6a3489177/">
-                        <img class="w-8" src="/src/img/linkedin.svg" alt="">
+                        <img class="w-8 hover:scale-125 transition-transform ease-in-out" src="/src/img/linkedin.svg" alt="">
                     </a>
                     <a href="https://www.instagram.com/front_joabsonnogueira/">
-                        <img class="w-8" src="/src/img/insta.svg" alt="">
+                        <img class="w-8 hover:scale-125 transition-transform ease-in-out" src="/src/img/insta.svg" alt="">
                     </a>
                     <a href="https://github.com/NosbaoJ92">
-                        <img class="w-8" src="/src/img/github.svg" alt="">
+                        <img class="w-8 hover:scale-125 transition-transform ease-in-out" src="/src/img/github.svg" alt="">
                     </a>
                 </div>
             </div>
-            <div class="seta absolute w-full border flex justify-center -bottom-5 left-0">
-                <a href="#sec2"><img class="w-8 animate-bounce " src="/src/img/seta.svg" alt=""></a>
+            <div class="seta absolute w-full flex justify-center -bottom-5 left-0">
+                
+                <div class="seta w-8 bottom-4 right-4 bg-stone-500 rounded-full ">
+                    <a href="#sec2"><img class="w-8 animate-bounce" src="/src/img/seta.svg" alt=""></a>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="sec2" class="sec2 w-full h-full p-6 border-t border-b shadow-black shadow-md min-[768px]:p-16">
-        <div class="container w-full h-full flex flex-col justify-between relative border">
+        <div class="container w-full h-full flex flex-col justify-between relative">
             <div class="formacao">
-                <h1 class="text-white text-4xl font-bold min-[768px]:text-6xl">SOBRE</h1>
-               <h3 class="portifolio text-lime-400 text-xl font-semibold min-[768px]:text-3xl">FORMAÇÃO E SKILLS</h3>
+                <h1 class="text-white text-4xl font-bold min-[768px]:text-6xl min-[1024px]:text-8xl">SOBRE</h1>
+               <h3 class="portifolio text-lime-400 text-xl font-semibold min-[768px]:text-3xl min-[1024px]:text-4xl">FORMAÇÃO E SKILLS</h3>
            </div>
         </div>
     </section>
 
     <section id="sec3" class="sec3 w-full h-full p-6 relative min-[768px]:p-16">
-        <div class="container w-full h-full flex flex-col justify-between relative border">
+        <div class="container w-full h-full flex flex-col justify-between relative ">
             <div class="formacao w-full h-1/6">
-                <h1 class="text-white text-4xl font-bold min-[768px]:text-6xl">PROJETOS</h1>
-               <h3 class="portifolio text-lime-400 text-xl font-semibold min-[768px]:text-3xl">DESENVOLVIDOS</h3>
+                <h1 class="text-white text-4xl font-bold min-[768px]:text-6xl min-[1024px]:text-8xl">PROJETOS</h1>
+               <h3 class="portifolio text-lime-400 text-xl font-semibold min-[768px]:text-3xl min-[1024px]:text-4xl">DESENVOLVIDOS</h3>
            </div>
-           <div class="web-mobile w-full h-5/6 flex flex-col border gap-2">
+           <div class="web-mobile w-full h-5/6 flex flex-col  gap-2">
                 <div class="web w-full flex pt-4 gap-3 justify-center">
                     <p class="Skills text-2xl font-bold text-zinc-200">
                         <button id="AbrirWEB" class="hover:text-lime-400 transition-colors delay-75 " onclick="AbrirWEB()" >WEB</button> <span class="text-lime-400">|</span>
@@ -83,7 +86,7 @@
                         <img class="snap-center grayscale hover:grayscale-0 w-full h-full transition-all delay-150" src="/src/img/Myfood.JPG" alt="">
                     </a>
                 </div>
-                <div class="scroll-projetos-web horizontal absolute -bottom-4 border border-orange-400 w-full h-3/4 flex overflow-scroll snap-x max-[767px]:hidden">
+                <div class="scroll-projetos-web horizontal absolute -bottom-4 w-full h-3/4 flex overflow-scroll snap-x max-[767px]:hidden">
                     <div class="relative w-full snap-center">
                         <div class="iframe w-full h-full flex">
                             <iframe class="w-screen h-full" src="https://stunning-swan-8efa50.netlify.app/" frameborder="0"></iframe>
@@ -135,14 +138,14 @@
                     </div>
                     <label for="message" class="label first-letter:block mb-2 text-sm font-medium text-gray-900 dark:text-lime-400 ">Deixe sua mensagem</label>
                     <input type="text" id="message" class="block mb-6 p-2.5 w-full  text-sm bg-gray-50 rounded border border-lime-400 focus:ring-lime-400 focus:border-lime-400 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-400 dark:focus:border-lime-400" placeholder="Digite aqui sua mensagem ou comentário..."></input>
-                    <button type="submit" class="BtnCurriculum p-2 bg-slate-50 w-full min-[768px]:hover:-translate-y-1 transition-all min-[768px]:hover:border border-slate-950 min-[768px]:hover:delay-75 min-[768px]:hover:bg-lime-400 min-[768px]:ease-in self-center mt-3 font-semibold">Enviar</button>
+                    <button type="submit" class="BtnCurriculum p-2 bg-slate-50 w-56 hover:-translate-y-1 transition-all hover:border border-slate-950 hover:delay-75 hover:bg-lime-400 ease-in self-center mt-3 font-semibold">Enviar</button>
                 </form>
                 <div class="links-social flex flex-col justify-center items-center gap-2">
                     <p class="medias text-lime-400 drop-shadow-xl">Redes Sociais</p>
                     <div class="links flex gap-3">
-                        <a href="https://www.linkedin.com/in/joabson-nogueira-6a3489177/"><img class="w-8 min-[768px]:hover:scale-125 transition-transform	" src="/src/img/linkedin.svg" alt=""></a>
-                        <a href="https://www.instagram.com/front_joabsonnogueira/"><img class="w-8 min-[768px]:hover:scale-125 transition-transform" src="/src/img/insta.svg" alt=""></a>
-                        <a href="https://github.com/NosbaoJ92"><img class="w-8 min-[768px]:hover:scale-125 transition-transform" src="/src/img/github.svg" alt=""></a>
+                        <a href="https://www.linkedin.com/in/joabson-nogueira-6a3489177/"><img class="w-8 hover:scale-125 transition-transform ease-in-out	" src="/src/img/linkedin.svg" alt=""></a>
+                        <a href="https://www.instagram.com/front_joabsonnogueira/"><img class="w-8 hover:scale-125 transition-transform ease-in-out" src="/src/img/insta.svg" alt=""></a>
+                        <a href="https://github.com/NosbaoJ92"><img class="w-8 hover:scale-125 transition-transform ease-in-out" src="/src/img/github.svg" alt=""></a>
                     </div>  
                 </div>
             </div>
