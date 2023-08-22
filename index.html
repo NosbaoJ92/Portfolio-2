@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="w-screen h-screen scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Joabson Nogueira Dev</title>
+</head>
+<body class="corpo w-full h-full overflow-visible relative bg-fixed bg-top bg-no-repeat overflow-x-hidden" style="background-image: url(/src/img/background.png)">
+    <section id="sec1" class="sec1 w-full h-full border p-6 bg-cover bg-right bg-no-repeat" style="background-image: url(/src/img/retrato.png)">
+        <div class="container-sup w-full h-full flex flex-col justify-between relative border">
+             <div class="textos-sup">
+                <h3 class="portifolio text-lime-300 text-xl font-semibold">PORTFÓLIO</h3>
+                <h1 class="text-white text-4xl font-bold">JOABSON <br> NOGUEIRA</h1>
+            </div>
+            <div class="links-end flex flex-col gap-10 pb-16">
+                <div class="curriculum flex flex-col justify-center items-center border">
+                    <a href="" class="btnCurriculum bg-white w-48 text-center p-2 font-semibold">
+                    CURRICULUM
+                    </a>
+                    <a href="" class="text-white font-semibold">CONTATO</a>
+                </div>
+                <div class="links-social flex justify-center gap-2">
+                    <a href="https://www.linkedin.com/in/joabson-nogueira-6a3489177/">
+                        <img class="w-8" src="/src/img/linkedin.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/front_joabsonnogueira/">
+                        <img class="w-8" src="/src/img/insta.svg" alt="">
+                    </a>
+                    <a href="https://github.com/NosbaoJ92">
+                        <img class="w-8" src="/src/img/github.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="seta absolute w-full flex justify-center -bottom-5">
+                <a href="#sec2"><img class="w-8 animate-bounce " src="/src/img/seta.svg" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec2" class="sec2 w-full h-full p-6 min-[768px]:border border-lime-300">
+        <div class="container w-full h-full flex flex-col justify-between relative border">
+            <div class="formacao">
+                <h1 class="text-white text-4xl font-bold">SOBRE</h1>
+               <h3 class="portifolio text-lime-300 text-xl font-semibold">FORMAÇÃO E SKILLS</h3>
+           </div>
+        </div>
+    </section>
+
+    <section id="sec3" class="sec3 w-full h-full p-6 min-[768px]:border border-lime-300">
+        <div class="container w-full h-full flex flex-col justify-between relative border">
+            <div class="formacao">
+                <h1 class="text-white text-4xl font-bold">PROJETOS</h1>
+               <h3 class="portifolio text-lime-300 text-xl font-semibold">DESENVOLVIDOS</h3>
+           </div>
+           <div class="web-mobile w-full h-full flex flex-col border justify-between gap-2">
+                <div class="web w-full flex  pt-6  gap-3 justify-center">
+                    <p class="Skills text-2xl font-bold text-zinc-200">
+                        <button id="AbrirWEB" class="hover:text-lime-400 transition-colors delay-75 " onclick="AbrirWEB()" >WEB</button> <span class="text-lime-400">|</span>
+                        <button id="AbrirMOBILE" class="hover:text-lime-400 transition-colors delay-75" onclick="AbrirMOBILE()" >MOBILE</button>
+                    </p>
+                </div>
+                <div class="scroll-projetos-web snap-y h-full border border-lime-300 p-2 overflow-x-hidden overflow-y-scroll">
+                    <button class="">
+                        <img class="zoomable-image snap-center grayscale hover:grayscale-0 w-full h-36 transition-all delay-150" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt="">
+                    </button>
+                    <button class="">
+                        <img class="zoomable-image snap-center grayscale hover:grayscale-0 w-full h-36 transition-all delay-150" src="/src/img/swiftcargo.jpg" alt="">
+                    </button>
+                    <button class="">
+                        <img class="zoomable-image snap-center grayscale hover:grayscale-0 w-full h-36 transition-all delay-150" src="/src/img/Myfood.JPG" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="zoomed-image hide fixed top-0 left-0 w-full h-full border flex justify-center items-center z-50 overflow-hidden" id="zoomedImage">
+                <image class="drop-shadow-md w-full h-full border border-gray-300" src="" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="sec4" class="sec4 w-full h-full p-6 min-[768px]:border border-lime-300">
+        <div class="container w-full h-full flex flex-col justify-center items-center border">
+            <div class="contato justify-evenly items-center w-full h-full flex flex-col">
+                <h1 class="text-white text-4xl font-bold">CONTATO</h1>
+                <form class="w-full flex flex-col justify-center">
+                    <div class="">
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-lime-300">Email</label>
+                        <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-lime-300 focus:border-lime-300  block w-full p-2.5 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-300 dark:focus:border-lime-300 dark:shadow-sm-light" placeholder="seu-email@provedor.com" required>
+                    </div>
+                    <div class="">
+                        <label for="telefone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-lime-300">Telefone</label>
+                        <input type="tel" id="telefone" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-lime-300 focus:border-lime-300  block w-full p-2.5 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-300 dark:focus:border-lime-300 dark:shadow-sm-light" placeholder="Digite aqui seu telefone" required>
+                    </div>
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-lime-300 ">Deixe sua mensagem</label>
+                    <input type="text" id="message" class="block mb-6 p-2.5 w-full  text-sm bg-gray-50 rounded border border-lime-300 focus:ring-lime-300 focus:border-lime-300 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-300 dark:focus:border-lime-300" placeholder="Digite aqui sua mensagem ou comentário..."></input>
+                    <button type="submit" class="BtnCurriculum p-2 bg-slate-50 w-56 min-[768px]:hover:-translate-y-1 transition-all min-[768px]:hover:border border-slate-950 min-[768px]:hover:delay-75 min-[768px]:hover:bg-lime-400 min-[768px]:ease-in self-center mt-3 font-semibold">Enviar</button>
+                </form>
+                <div class="links-social flex flex-col justify-center items-center gap-2">
+                    <p class="medias text-lime-400 drop-shadow-xl">Redes Sociais</p>
+                    <div class="links flex gap-3">
+                        <a href="https://www.linkedin.com/in/joabson-nogueira-6a3489177/"><img class="w-8 min-[768px]:hover:scale-125 transition-transform	" src="/src/img/linkedin.svg" alt=""></a>
+                        <a href="https://www.instagram.com/front_joabsonnogueira/"><img class="w-8 min-[768px]:hover:scale-125 transition-transform" src="/src/img/insta.svg" alt=""></a>
+                        <a href="https://github.com/NosbaoJ92"><img class="w-8 min-[768px]:hover:scale-125 transition-transform" src="/src/img/github.svg" alt=""></a>
+                    </div>
+                        
+                    </div>   
+                </div>
+           </div>
+           
+    </section>
+    
+    <script>
+        // Função para mostrar a imagem zoomada
+        function showZoomedImage(src) {
+        const zoomedImage = document.getElementById("zoomedImage");
+        zoomedImage.querySelector("img").src = src;
+        zoomedImage.classList.remove("hide");
+        }
+
+        // Função para esconder a imagem zoomada
+        function hideZoomedImage() {
+        const zoomedImage = document.getElementById("zoomedImage");
+        zoomedImage.classList.add("hide");
+        }
+
+        // Adicionar eventos de clique para as imagens
+        const zoomableImages = document.querySelectorAll(".zoomable-image");
+        zoomableImages.forEach((image) => {
+        image.addEventListener("click", () => {
+            const src = image.src;
+            showZoomedImage(src);
+            });
+        });
+
+        // Fechar imagem zoomada quando clicar fora da imagem
+        document.getElementById("zoomedImage").addEventListener("click", () => {
+        hideZoomedImage();
+        });
+    </script>
+    
+</body>
+</html>

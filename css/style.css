@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html{
+    scroll-snap-type: y mandatory;
+}
+
+section{
+    scroll-snap-align: center;
+}
+
+.zoomed-image {
+    background: rgba( 0, 0, 0, 0.8 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+  
+.zoomed-image img {
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+/* Esconde a imagem zoomada por padrão */
+.zoomed-image.hide {
+    display: none;
+}
+
+.sec2, .sec4 {
+    background: rgba(61, 61, 61, 0.05);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+}
+
+.scroll-projetos-web, .scroll-projetos-mobile{
+    height: 456px;
+}
+
+.scroll-projetos-web::-webkit-scrollbar, .scroll-projetos-mobile::-webkit-scrollbar{ 
+    display: none;
+}
