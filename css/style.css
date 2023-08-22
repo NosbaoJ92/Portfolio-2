@@ -34,9 +34,13 @@ section{
 }
 
 .scroll-projetos-web, .scroll-projetos-mobile{
-    height: 456px;
+    height: 470px;
 }
 
 .scroll-projetos-web::-webkit-scrollbar, .scroll-projetos-mobile::-webkit-scrollbar{ 
     display: none;
+}
+
+.label{
+    text-shadow: 1px 1px  5px black;
 }
