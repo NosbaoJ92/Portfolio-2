@@ -33,9 +33,6 @@ section{
     -webkit-backdrop-filter: blur( 1.5px );
 }
 
-/* .scroll-projetos-web, .scroll-projetos-mobile{
-    height: 470px;
-} */
 
 .scroll-projetos-web::-webkit-scrollbar, .scroll-projetos-mobile::-webkit-scrollbar{ 
     display: none;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/js/script.js"></script>
     <link rel="stylesheet" href="/css/style.css">
     <title>Joabson Nogueira Dev</title>
 </head>
@@ -20,7 +21,7 @@
                     <a href="" class="btnCurriculum bg-white w-48 text-center p-2 font-semibold">
                     CURRICULUM
                     </a>
-                    <a href="" class="text-white font-semibold">CONTATO</a>
+                    <a href="#sec4" class="text-white font-semibold">CONTATO</a>
                 </div>
                 <div class="links-social flex justify-center gap-2">
                     <a href="https://www.linkedin.com/in/joabson-nogueira-6a3489177/">
@@ -49,7 +50,7 @@
         </div>
     </section>
 
-    <section id="sec3" class="sec3 w-full h-full p-6 min-[768px]:border border-lime-300">
+    <section id="sec3" class="sec3 w-full h-full p-6 min-[768px]:border border-lime-300 relative">
         <div class="container w-full h-full flex flex-col justify-between relative border">
             <div class="formacao w-full h-1/6">
                 <h1 class="text-white text-4xl font-bold">PROJETOS</h1>
@@ -62,33 +63,37 @@
                         <button id="AbrirMOBILE" class="hover:text-lime-400 transition-colors delay-75" onclick="AbrirMOBILE()" >MOBILE</button>
                     </p>
                 </div>
-                <div class="scroll-projetos-web snap-y border border-lime-300 overflow-x-hidden overflow-y-scroll p-2">
-                    <button class="w-full h-2/6 ">
+                <div class="scroll-projetos-web snap-y flex flex-col gap-2 border border-lime-300 overflow-x-hidden overflow-y-scroll p-4">
+
+                    <a href="https://stunning-swan-8efa50.netlify.app/" href class="w-full h-2/6" target="_blank">
                         <img class=" snap-center grayscale hover:grayscale-0 w-full h-full transition-all delay-150" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt="">
-                    </button>
-                    <button class="w-full h-2/6">
+                    </a>
+                    <a href="" class="w-full h-2/6">
                         <img class=" snap-center grayscale hover:grayscale-0 w-full h-full transition-all delay-150" src="/src/img/swiftcargo.jpg" alt="">
-                    </button>
-                    <button class="w-full h-2/6">
+                    </a>
+                    <a href="" class="w-full h-2/6">
                         <img class=" snap-center grayscale hover:grayscale-0 w-full h-full transition-all delay-150" src="/src/img/Myfood.JPG" alt="">
-                    </button>
-                    <button class="w-full h-2/6">
+                    </a>
+                    <a href="" class="w-full h-2/6">
                         <img class=" snap-center grayscale hover:grayscale-0 w-full h-full transition-all delay-150" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt="">
-                    </button>
-                    <button class="w-full h-2/6">
+                    </a>
+                    <a href="" class="w-full h-2/6">
                         <img class=" snap-center grayscale hover:grayscale-0 w-full h-full transition-all delay-150" src="/src/img/swiftcargo.jpg" alt="">
-                    </button>
-                    <button class="w-full h-2/6">
+                    </a>
+                    <a href="" class="w-full h-2/6">
                         <img class="snap-center grayscale hover:grayscale-0 w-full h-full transition-all delay-150" src="/src/img/Myfood.JPG" alt="">
-                    </button>
+                    </a>
                 </div>
                 
             </div>
+
         </div>
-        
+        <!-- <div class="iframes absolute w-full h-2/3 top-32 left-0">
+            <iframe class="w-full h-full" src="https://stunning-swan-8efa50.netlify.app/" frameborder="0"></iframe>
+        </div> -->
     </section>
 
-    <section id="sec4" class="w-full h-full p-4 min-[768px]:border border-lime-300 bg-cover bg-center bg-no-repeat" style="background-image: url(/src/img/retrato3.png)">
+    <section id="sec4" class="w-full h-full relative p-6 min-[768px]:border border-lime-300 bg-cover bg-center bg-no-repeat" style="background-image: url(/src/img/retrato3.png)">
         <div class="sec4 container p-4 w-full h-full flex flex-col justify-center items-center border  rounded-2xl shadow-black shadow-md">
             <div class="contato justify-evenly items-center w-full h-full flex flex-col">
                 <h1 class="text-white text-4xl font-bold">CONTATO</h1>
@@ -116,7 +121,9 @@
                     </div>   
                 </div>
            </div>
-           
+           <div class="seta absolute w-8 bottom-4 right-4 rotate-180">
+            <a href="#sec1"><img class="w-full " src="/src/img/seta.svg" alt=""></a>
+        </div>
     </section>
     
     <script>
