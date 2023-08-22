@@ -11,19 +11,19 @@
 </head>
 <body class="corpo w-full h-full overflow-visible relative bg-fixed bg-top bg-no-repeat overflow-x-hidden" style="background-image: url(/src/img/background.png)">
     <section id="sec1" class="sec1 w-full h-full border p-6 bg-fixed bg-right bg-no-repeat min-[768px]:p-16" style="background-image: url(/src/img/retrato.png)">
-        <div class="container-sup w-full h-full flex flex-col justify-between relative border">
+        <div class="container-sup w-full h-full flex flex-col justify-between relative border p-4">
              <div class="textos-sup">
-                <h3 class="portifolio text-lime-300 text-xl font-semibold min-[768px]:text-3xl">PORTFÓLIO</h3>
-                <h1 class="text-white text-4xl font-bold min-[768px]:text-6xl">JOABSON <br> NOGUEIRA</h1>
+                <h3 class="portifolio text-lime-400 text-xl font-semibold min-[768px]:text-3xl min-[1024px]:text-4xl min-[1024px]:font-bold">PORTFÓLIO</h3>
+                <h1 class="text-white text-4xl font-bold min-[768px]:text-6xl min-[1024px]:text-8xl">JOABSON <br> NOGUEIRA</h1>
             </div>
-            <div class="links-end flex flex-col gap-10 pb-16 min-[768px]:pb-28">
-                <div class="curriculum flex flex-col justify-center items-center border">
-                    <a href="" class="btnCurriculum bg-white w-48 text-center p-2 font-semibold">
-                    CURRICULUM
+            <div class="links-end flex flex-col gap-10 pb-16 min-[768px]:pb-28 min-[1024px]:">
+                <div class="curriculum flex flex-col justify-center items-center border gap-2">
+                    <a href="/src/docs/Curriculo - Joabson Nogueira de Oliveira.pdf" class="BtnCurriculum flex justify-center items-center bg-slate-50 w-56 h-16 hover:-translate-y-1 transition-all hover:border border-slate-950 hover:delay-75 hover:bg-lime-400 ease-in" download>
+                        <p class="text-xl font-semibold">CURRICULUM</p>
                     </a>
                     <a href="#sec4" class="text-white font-semibold">CONTATO</a>
                 </div>
-                <div class="links-social flex justify-center gap-2">
+                <div class="links-social flex justify-center gap-3 border min-[1024px]:absolute min-[1024px]:bottom-4 ">
                     <a href="https://www.linkedin.com/in/joabson-nogueira-6a3489177/">
                         <img class="w-8" src="/src/img/linkedin.svg" alt="">
                     </a>
@@ -45,7 +45,7 @@
         <div class="container w-full h-full flex flex-col justify-between relative border">
             <div class="formacao">
                 <h1 class="text-white text-4xl font-bold min-[768px]:text-6xl">SOBRE</h1>
-               <h3 class="portifolio text-lime-300 text-xl font-semibold min-[768px]:text-3xl">FORMAÇÃO E SKILLS</h3>
+               <h3 class="portifolio text-lime-400 text-xl font-semibold min-[768px]:text-3xl">FORMAÇÃO E SKILLS</h3>
            </div>
         </div>
     </section>
@@ -54,17 +54,16 @@
         <div class="container w-full h-full flex flex-col justify-between relative border">
             <div class="formacao w-full h-1/6">
                 <h1 class="text-white text-4xl font-bold min-[768px]:text-6xl">PROJETOS</h1>
-               <h3 class="portifolio text-lime-300 text-xl font-semibold min-[768px]:text-3xl">DESENVOLVIDOS</h3>
+               <h3 class="portifolio text-lime-400 text-xl font-semibold min-[768px]:text-3xl">DESENVOLVIDOS</h3>
            </div>
-           <div class="web-mobile w-full h-5/6 flex flex-col border gap-2 ">
-                <div class="web w-full flex  pt-4 gap-3 justify-center">
+           <div class="web-mobile w-full h-5/6 flex flex-col border gap-2">
+                <div class="web w-full flex pt-4 gap-3 justify-center">
                     <p class="Skills text-2xl font-bold text-zinc-200">
                         <button id="AbrirWEB" class="hover:text-lime-400 transition-colors delay-75 " onclick="AbrirWEB()" >WEB</button> <span class="text-lime-400">|</span>
                         <button id="AbrirMOBILE" class="hover:text-lime-400 transition-colors delay-75" onclick="AbrirMOBILE()" >MOBILE</button>
                     </p>
                 </div>
-                <div class="scroll-projetos-web snap-y flex flex-col gap-2 border border-lime-300 overflow-x-hidden overflow-y-scroll p-4">
-
+                <div class="scroll-projetos-web vertical snap-y flex flex-col gap-2 border border-lime-400 overflow-x-hidden overflow-y-scroll p-4 min-[768px]:hidden">
                     <a href="https://stunning-swan-8efa50.netlify.app/" href class="w-full h-2/6 min-[768px]:h-2/4" target="_blank">
                         <img class=" snap-center grayscale hover:grayscale-0 w-full h-full transition-all delay-150" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt="">
                     </a>
@@ -84,13 +83,41 @@
                         <img class="snap-center grayscale hover:grayscale-0 w-full h-full transition-all delay-150" src="/src/img/Myfood.JPG" alt="">
                     </a>
                 </div>
-                
+                <div class="scroll-projetos-web horizontal absolute -bottom-4 border border-orange-400 w-full h-3/4 flex overflow-scroll snap-x max-[767px]:hidden">
+                    <div class="relative w-full snap-center">
+                        <div class="iframe w-full h-full flex">
+                            <iframe class="w-screen h-full" src="https://stunning-swan-8efa50.netlify.app/" frameborder="0"></iframe>
+                        </div>
+                        <div class="seta absolute z-10 bottom-1 left-1 w-8">
+                            <a href="https://stunning-swan-8efa50.netlify.app/" target="_blank" data-popover-target="popover-artefato" data-popover-placement="right"  class="w-full text-black text-xs flex justify-center p-2 bg-lime-400">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <div data-popover id="popover-artefato" role="tooltip" class="absolute z-20 invisible inline-block text-center w-16 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm opacity-0 dark:text-black dark:border-gray-600 dark:bg-white">
+                                <div class="">
+                                    <p>Acessar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative w-full snap-center">
+                        <div class="iframe w-full h-full flex">
+                            <iframe class="w-screen h-full" src="https://swift-cargo.netlify.app/" frameborder="0"></iframe>
+                        </div>
+                        <div class="seta absolute z-10 bottom-1 left-1 w-8">
+                            <a href="https://swift-cargo.netlify.app/" target="_blank" data-popover-target="popover-artefato" data-popover-placement="right"  class="w-full text-black text-xs flex justify-center p-2 bg-lime-400">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <div data-popover id="popover-artefato" role="tooltip" class="absolute z-20 invisible inline-block text-center w-16 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm opacity-0 dark:text-black dark:border-gray-600 dark:bg-white">
+                                <div class="">
+                                    <p>Acessar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
-        <!-- <div class="iframes absolute w-full h-2/3 top-32 left-0">
-            <iframe class="w-full h-full" src="https://stunning-swan-8efa50.netlify.app/" frameborder="0"></iframe>
-        </div> -->
+        
     </section>
 
     <section id="sec4" class="w-full h-full relative p-6 bg-fixed bg-center bg-no-repeat min-[768px]:p-16 min-[1024px]:bg-contain min-[1024px]:bg-left" style="background-image: url(/src/img/retrato3.png)">
@@ -99,15 +126,15 @@
                 <h1 class="text-white text-4xl font-bold">CONTATO</h1>
                 <form class="w-full flex flex-col justify-center  ">
                     <div class="">
-                        <label for="email" class="label block mb-2 text-sm font-medium text-gray-900 dark:text-lime-300">Email</label>
-                        <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-lime-300 focus:border-lime-300  block w-full p-2.5 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-300 dark:focus:border-lime-300 dark:shadow-sm-light" placeholder="seu-email@provedor.com" required>
+                        <label for="email" class="label block mb-2 text-sm font-medium text-gray-900 dark:text-lime-400">Email</label>
+                        <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-lime-400 focus:border-lime-400  block w-full p-2.5 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-400 dark:focus:border-lime-400 dark:shadow-sm-light" placeholder="seu-email@provedor.com" required>
                     </div>
                     <div class="">
-                        <label for="telefone" class="label first-letter:block mb-2 text-sm font-medium text-gray-900 dark:text-lime-300">Telefone</label>
-                        <input type="tel" id="telefone" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-lime-300 focus:border-lime-300  block w-full p-2.5 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-300 dark:focus:border-lime-300 dark:shadow-sm-light" placeholder="Digite aqui seu telefone" required>
+                        <label for="telefone" class="label first-letter:block mb-2 text-sm font-medium text-gray-900 dark:text-lime-400">Telefone</label>
+                        <input type="tel" id="telefone" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-lime-400 focus:border-lime-400  block w-full p-2.5 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-400 dark:focus:border-lime-400 dark:shadow-sm-light" placeholder="Digite aqui seu telefone" required>
                     </div>
-                    <label for="message" class="label first-letter:block mb-2 text-sm font-medium text-gray-900 dark:text-lime-300 ">Deixe sua mensagem</label>
-                    <input type="text" id="message" class="block mb-6 p-2.5 w-full  text-sm bg-gray-50 rounded border border-lime-300 focus:ring-lime-300 focus:border-lime-300 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-300 dark:focus:border-lime-300" placeholder="Digite aqui sua mensagem ou comentário..."></input>
+                    <label for="message" class="label first-letter:block mb-2 text-sm font-medium text-gray-900 dark:text-lime-400 ">Deixe sua mensagem</label>
+                    <input type="text" id="message" class="block mb-6 p-2.5 w-full  text-sm bg-gray-50 rounded border border-lime-400 focus:ring-lime-400 focus:border-lime-400 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-400 dark:focus:border-lime-400" placeholder="Digite aqui sua mensagem ou comentário..."></input>
                     <button type="submit" class="BtnCurriculum p-2 bg-slate-50 w-full min-[768px]:hover:-translate-y-1 transition-all min-[768px]:hover:border border-slate-950 min-[768px]:hover:delay-75 min-[768px]:hover:bg-lime-400 min-[768px]:ease-in self-center mt-3 font-semibold">Enviar</button>
                 </form>
                 <div class="links-social flex flex-col justify-center items-center gap-2">
@@ -120,7 +147,7 @@
                 </div>
             </div>
         </div>
-        <div class="seta absolute w-8 bottom-4 right-4 rotate-180">
+        <div class="seta absolute w-8 bottom-4 right-4 rotate-180 bg-black rounded-full">
             <a href="#sec1"><img class="w-full " src="/src/img/seta.svg" alt=""></a>
         </div>
     </section>

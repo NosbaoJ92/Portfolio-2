@@ -8,6 +8,10 @@ section{
     scroll-snap-align: center;
 }
 
+.BtnCurriculum:hover{
+    filter: drop-shadow(6px 6px #fff);
+}
+
 
 .sec2, .sec4 {
     background: rgba(23, 23, 23, 0.418);
