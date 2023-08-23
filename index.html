@@ -46,12 +46,50 @@
     </section>
 
     <section id="sec2" class="sec2 w-full h-full p-6 border-t border-b shadow-black shadow-md min-[768px]:p-16">
-        <div class="container w-full h-full flex flex-col justify-between relative">
+        <div class="container w-full h-full flex flex-col justify-between relative gap-4">
             <div class="formacao">
                 <h1 class="text-white text-4xl font-bold min-[768px]:text-6xl min-[1024px]:text-8xl">SOBRE</h1>
-               <h3 class="portifolio text-lime-400 text-xl font-semibold min-[768px]:text-3xl min-[1024px]:text-4xl">FORMAÇÃO E SKILLS</h3>
-           </div>
-        </div>
+                <h3 class="portifolio text-lime-400 text-xl font-semibold min-[768px]:text-3xl min-[1024px]:text-4xl">FORMAÇÃO E SKILLS</h3>
+            </div>
+            <div class="card-container border w-3/12 h-full text-white">
+                <div class="cabecalho">
+                    <img id="profile" src="src/img/profile.png" alt="profile">
+                </div>
+                <div class="blc-1">
+                    <div>
+                    <h1><a href="">Joabson Nogueira</a> </h1>
+                    </div>
+                </div>
+                <hr>
+                <div class="connections">
+                    <div class="items">
+                        <p>Connections</p>
+                        <p id="numbers">73</p>
+                    </div>
+                    <div class="items">
+                    <strong><p>Grow your network</p></strong>
+                    </div>
+                </div>
+                <div class="connections">
+                <div class="items">
+                    <p>Who's viewed your profile</p>
+                    <p id="numbers">8</p>
+                </div >
+            </div>
+            <hr>
+            <div class="acess1">
+                <p>Access exclusive tools & insights</p>
+                <div id="triste">
+                    <img id="icons" src="src/img/cube.svg" alt="bookmark">
+                    <p>Try Premium for free</p>
+                </div>
+            </div>
+            <hr>
+            <div class="acess2">
+                <img id="icons" src="src/img/bookmark.svg" alt="bookmark">
+                <p>My items</p>
+            </div>
+        </div>       
     </section>
 
     <section id="sec3" class="sec3 w-full h-full p-6 relative min-[768px]:p-16">
@@ -162,18 +200,21 @@
         <div class="sec4 container p-4 w-full h-full flex flex-col justify-center items-center border rounded-2xl shadow-black shadow-md min-[768px]:p-16 min-[1024px]:absolute min-[1024px]:w-5/12  min-[1024px]:h-5/6 min-[1024px]:right-36">
             <div class="contato justify-evenly items-center w-full h-full flex flex-col min-[768px]:gap-8">
                 <h1 class="text-white text-4xl font-bold">CONTATO</h1>
-                <form class="w-full flex flex-col justify-center  ">
+                <form class="w-full flex flex-col justify-center gap-3 ">
                     <div class="">
-                        <label for="email" class="label block mb-2 text-sm font-medium text-gray-900 dark:text-lime-400">Email</label>
+                        <label for="email" class="label block text-sm font-medium text-gray-900 dark:text-lime-400">Email</label>
                         <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-lime-400 focus:border-lime-400  block w-full p-2.5 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-400 dark:focus:border-lime-400 dark:shadow-sm-light" placeholder="seu-email@provedor.com" required>
                     </div>
                     <div class="">
                         <label for="telefone" class="label first-letter:block mb-2 text-sm font-medium text-gray-900 dark:text-lime-400">Telefone</label>
                         <input type="tel" id="telefone" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-lime-400 focus:border-lime-400  block w-full p-2.5 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-400 dark:focus:border-lime-400 dark:shadow-sm-light" placeholder="Digite aqui seu telefone" required>
                     </div>
-                    <label for="message" class="label first-letter:block mb-2 text-sm font-medium text-gray-900 dark:text-lime-400 ">Deixe sua mensagem</label>
-                    <input type="text" id="message" class="block mb-6 p-2.5 w-full  text-sm bg-gray-50 rounded border border-lime-400 focus:ring-lime-400 focus:border-lime-400 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-400 dark:focus:border-lime-400" placeholder="Digite aqui sua mensagem ou comentário..."></input>
+                    <div class="">
+                        <label for="message" class="label first-letter:block mb-2 text-sm font-medium text-gray-900 dark:text-lime-400 ">Deixe sua mensagem</label>
+                        <input type="text" id="message" class="block mb-6 p-2.5 w-full  text-sm bg-gray-50 rounded border border-lime-400 focus:ring-lime-400 focus:border-lime-400 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-400 dark:focus:border-lime-400" placeholder="Digite aqui sua mensagem ou comentário..."></input>
+                    </div>
                     <button type="submit" class="BtnCurriculum p-2 bg-slate-50 w-56 hover:-translate-y-1 transition-all hover:border border-slate-950 hover:delay-75 hover:bg-lime-400 ease-in self-center mt-3 font-semibold">Enviar</button>
+                    </div>
                 </form>
                 <div class="links-social flex flex-col justify-center items-center gap-2">
                     <p class="medias text-lime-400 drop-shadow-xl">Redes Sociais</p>

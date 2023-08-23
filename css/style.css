@@ -48,3 +48,98 @@ section{
     transform: rotateZ(180deg);
 }
 }
+
+.cabecalho{
+    background-image: url('/src/img/back.jpg');
+    background-position: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #1d2226;
+    border-radius: 8px;
+}
+.blc-1{
+    margin-top: 80px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.blc-1 p{
+    font-weight: 300;
+    font-size: 15px;
+}
+.blc-1 h1{
+    font-weight: 500;
+    font-size: 25px;
+}
+#icons{
+    width: 25px;
+}
+
+#profile{
+    width: 120px;
+    border-radius: 50%;
+    position:absolute;
+    box-shadow: 0 3px 5px rgb(24, 24, 24);
+}
+
+hr{
+    border-color: #5c5c5c;
+    margin: 2px;
+}
+
+.connections{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.connections:hover{
+    background-color: #465159;
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.acess1:hover,.acess2:hover{
+    background-color: #465159;
+    cursor: pointer;
+}
+.acess1{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 20px;
+
+}
+
+#triste{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.acess2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 20px;
+    gap: 5px;
+}
+
+#numbers{
+    color: #5f98cf;
+    font-weight: 500;
+}
