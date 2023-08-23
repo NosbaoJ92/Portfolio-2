@@ -27,3 +27,24 @@ section{
 .label{
     text-shadow: 1px 1px  5px black;
 }
+@media screen and (min-width: 768px){
+    .sec3::before, .sec3::after{
+    background: linear-gradient(to right, rgb(25,26,18)40%, rgba(255,255,255,0)100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 18%;
+    z-index: 1;
+}
+
+.sec3::before{
+    left: 0;
+    bottom: 0;
+}
+
+.sec3::after{
+    right: 0;
+    bottom: 0;
+    transform: rotateZ(180deg);
+}
+}
