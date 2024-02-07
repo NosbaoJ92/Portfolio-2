@@ -6,3 +6,5 @@ function AbrirMOBILE() {
     document.getElementById("projetos-web").style.display = "none";    
     document.getElementById("projetos-mobile").style.display = "block";      
     }
+
+    

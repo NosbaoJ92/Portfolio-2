@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="scroll-smooth ">
+<html lang="pt-br" class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="/js/script.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css">
@@ -45,182 +46,52 @@
         </div>
     </section>
 
-    <section id="sec2" class="sec2 w-full h-dvh p-6 border-t border-b shadow-black shadow-md min-[768px]:p-16 relative">
-        <img src="/src/img/Construction hat-pana.svg" alt="" class="absolute -bottom-8 left-1/3 w-4/12 h-full drop-shadow-xl">
-        <div class="container w-full h-full flex flex-col justify-between relative gap-4">
+    <section id="sec2" class="sec2 w-full h-dvh p-6 border-t border-b shadow-black shadow-md min-[768px]:p-16">
+        <!-- <img src="/src/img/Construction hat-pana.svg" alt="" class="absolute -bottom-8 left-1/3 w-4/12 h-full drop-shadow-xl"> -->
+        <div class="container w-full h-full flex justify-around relative gap-4">
             
-            <div class="formacao">
+            <div class="formacao absolute left-0">
                 <h1 class="text-white text-4xl font-bold min-[768px]:text-6xl min-[1024px]:text-8xl">SOBRE</h1>
                 <h3 class="portifolio text-lime-400 text-xl font-semibold min-[768px]:text-3xl min-[1024px]:text-4xl">FORMAÇÃO E SKILLS</h3>
             </div>
            
-            <!-- <div class="card-container border w-3/12 h-full text-white">
-                <div class="cabecalho">
-                    <img id="profile" src="src/img/profile.png" alt="profile">
-                </div>
-                <div class="blc-1">
-                    <div>
-                        <h1>
-                            <a href="">Joabson Nogueira</a> 
-                        </h1>
-                    </div>
-                </div>
-                <hr>
-                <div class="connections">
-                    <div class="items">
-                        <p>Formação</p>
-                        
-                    </div>
-                    <div class="items">
-                        <strong>
-                            <p>Etec Dra Ruth Cardoso</p>
-                            <p id="numbers">Ago/2022 - Dez/2023</p>
-                        </strong>
-                    </div>
-                    <div class="items">
-                        <strong>
-                            <p>Etec Dra Ruth Cardoso</p>
-                            <p id="numbers">Ago/2022 - Dez/2023</p>
-                        </strong>
-                    </div>
-                </div>
-                <hr>
-                <div class="connections">
-                    <div class="items">
-                        <p>Skills</p>
-                    </div >
-                    <div class="items">
-                        <strong>
-                            <p>Etec Dra Ruth Cardoso</p>
-                            <p id="numbers">Ago/2022 - Dez/2023</p>
-                        </strong>
-                    </div>
-                </div>
-                <hr>
-                <div class="connections">
-                    <div class="items">
-                        <p>Idiomas</p>
-                    </div >
-                    <div class="items">
-                        <strong>
-                            <p>Inglês Intermediário - B2</p>
-                            <p>Espanhol Básico - A2</p>
-                        </strong>
-                    </div>
-                </div>
-            </div> -->
+           
         </div>       
     </section>
 
-    <section id="sec3" class="sec3 w-full h-dvh p-6 relative min-[768px]:p-16 ">
-        <div class="formacao w-full h-1/6  min-[768px]:absolute z-10">
+    <section id="sec3" class="sec3 w-full h-dvh p-6 relative min-[768px]:p-16">
+        <div class="formacao w-full h-1/6  min-[768px]:absolute z-20">
             <h1 class="text-white text-4xl font-bold min-[768px]:text-6xl min-[1024px]:text-8xl">PROJETOS</h1>
             <h3 class="portifolio text-lime-400 text-xl font-semibold min-[768px]:text-3xl min-[1024px]:text-4xl">DESENVOLVIDOS</h3>
         </div>
-        <div class="web w-screen absolute left-0 flex justify-center min-[768px]:pt-28 z-10 min-[768px]:">
-            <p class="Skills w-full text-center text-2xl font-bold text-zinc-200">
-                <button id="AbrirWEB" class="hover:text-lime-400 transition-colors delay-75 " onclick="AbrirWEB()" >WEB</button> <span class="text-lime-400">|</span>
-                <button id="AbrirMOBILE" class="hover:text-lime-400 transition-colors delay-75" onclick="AbrirMOBILE()" >MOBILE</button>
-            </p>
-        </div>
-        <div class="container w-full h-full flex flex-col items-center">
-
-            <!-- WEB -->
-            <!-- <div id="projetos-web" class="projetos-web w-full h-full flex flex-col gap-2">
-                <div class="scroll-projetos-web vertical h-3/4  snap-y flex flex-col gap-2 overflow-x-hidden overflow-y-scroll p-4 min-[768px]:hidden">
-                    <a href="https://stunning-swan-8efa50.netlify.app/" href class="w-full h-2/6 min-[768px]:h-2/4" target="_blank">
-                        <img class=" snap-center grayscale hover:grayscale-0 w-full h-full transition-all delay-150" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt="">
-                    </a>
-                    <a href="" class="w-full h-2/6 min-[768px]:h-2/4">
-                        <img class=" snap-center grayscale hover:grayscale-0 w-full h-full transition-all delay-150" src="/src/img/swiftcargo.jpg" alt="">
-                    </a>
-                    <a href="" class="w-full h-2/6 min-[768px]:h-2/4">
-                        <img class=" snap-center grayscale hover:grayscale-0 w-full h-full transition-all delay-150" src="/src/img/Myfood.JPG" alt="">
-                    </a>
-                    <a href="" class="w-full h-2/6 min-[768px]:h-2/4">
-                        <img class=" snap-center grayscale hover:grayscale-0 w-full h-full transition-all delay-150" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt="">
-                    </a>
-                    <a href="" class="w-full h-2/6 min-[768px]:h-2/4">
-                        <img class=" snap-center grayscale hover:grayscale-0 w-full h-full transition-all delay-150" src="/src/img/swiftcargo.jpg" alt="">
-                    </a>
-                    <a href="" class="w-full h-2/6 min-[768px]:h-2/4">
-                        <img class="snap-center grayscale hover:grayscale-0 w-full h-full transition-all delay-150" src="/src/img/Myfood.JPG" alt="">
-                    </a>
-                </div>
-                <div class="scroll-projetos-web horizontal left-0 absolute gap-10 bottom-4 w-full h-4/6 flex overflow-scroll snap-x max-[767px]:hidden min-[768px]:p-0 min-[1024px]:pl-44 min-[1024px]:pr-44 min-[1440px]:pl-56 min-[1440px]:pr-56">
-                   
-                    <div class="relative w-full snap-center grayscale hover:grayscale-0 ">
-                        <div class="iframe w-full h-full flex">
-                            <iframe class="w-screen h-full" src="https://stunning-swan-8efa50.netlify.app/" frameborder="0"></iframe>
-                        </div>
-                        <div class="seta absolute z-10 bottom-1 left-1 w-8">
-                            <a href="https://stunning-swan-8efa50.netlify.app/" target="_blank" data-popover-target="popover-artefato" data-popover-placement="right"  class="w-full text-black text-xs flex justify-center p-2 bg-lime-400">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                            <div data-popover id="popover-artefato" role="tooltip" class="absolute z-20 invisible inline-block text-center w-16 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm opacity-0 dark:text-black dark:border-gray-600 dark:bg-white">
-                                <div class="">
-                                    <p>Acessar</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative w-full snap-center grayscale hover:grayscale-0">
-                        <div class="iframe w-full h-full flex">
-                            <iframe class="w-screen h-full" src="https://swift-cargo.netlify.app/" frameborder="0"></iframe>
-                        </div>
-                        <div class="seta absolute z-10 bottom-1 left-1 w-8">
-                            <a href="https://swift-cargo.netlify.app/" target="_blank" data-popover-target="popover-swift" data-popover-placement="right"  class="w-full text-black text-xs flex justify-center p-2 bg-lime-400">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                            <div data-popover id="popover-swift" role="tooltip" class="absolute z-20 invisible inline-block text-center w-16 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm opacity-0 dark:text-black dark:border-gray-600 dark:bg-white">
-                                <div class="">
-                                    <p>Acessar</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative w-full snap-center grayscale hover:grayscale-0">
-                        <div class="iframe w-full h-full flex ">
-                            <iframe class="w-screen h-full" src="https://neon-lamington-784d8a.netlify.app/" frameborder="0"></iframe>
-                        </div>
-                        <div class="seta absolute z-10 bottom-1 left-1 w-8">
-                            <a href="https://neon-lamington-784d8a.netlify.app/" target="_blank" data-popover-target="popover-myfood" data-popover-placement="right"  class="w-full text-black text-xs flex justify-center p-2 bg-lime-400">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                            <div data-popover id="popover-myfood" role="tooltip" class="absolute z-20 invisible inline-block text-center w-16 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm opacity-0 dark:text-black dark:border-gray-600 dark:bg-white">
-                                <div class="">
-                                    <p>Acessar</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative w-full snap-center grayscale hover:grayscale-0">
-                        <div class="iframe w-full h-full flex ">
-                            <iframe class="w-screen h-full" src="https://e-commerce-kb16w8u3q-nosbaoj92.vercel.app/" frameborder="0"></iframe>
-                        </div>
-                        <div class="seta absolute z-10 bottom-1 left-1 w-8">
-                            <a href="https://e-commerce-kb16w8u3q-nosbaoj92.vercel.app/" target="_blank" data-popover-target="popover-myfood" data-popover-placement="right"  class="w-full text-black text-xs flex justify-center p-2 bg-lime-400">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                            <div data-popover id="popover-myfood" role="tooltip" class="absolute z-20 invisible inline-block text-center w-16 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm opacity-0 dark:text-black dark:border-gray-600 dark:bg-white">
-                                <div class="">
-                                    <p>Acessar</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <div class="text-alerta absolute right-6 bottom-2 flex z-10 max-[767px]:hidden">
-                <p class="font-bold text-xl bg-lime-400 text-black p-2">"Shift + Scroll"</p>
+        
+        <div class="swiper-container ">
+            <div class="swiper-wrapper absolute h-screen">
+                <!-- Slides de imagens -->
+                <iframe href="https://neon-lamington-784d8a.netlify.app/" class="swiper-slide h-[85%] relative" src="https://neon-lamington-784d8a.netlify.app/" alt="Projeto 1">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+                <iframe  class="swiper-slide h-[85%]" src="https://brunolicatearquitetura.com/" alt="Projeto 2">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+                <iframe  class="swiper-slide h-[85%]" src="https://swift-cargo.netlify.app/" alt="Projeto 3">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+                <iframe  class="swiper-slide h-[85%]" src="https://brunolicate-arquitetura.netlify.app/" alt="Projeto 3">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+                
+                <iframe  class="swiper-slide h-[85%]" src="https://quizjessica.netlify.app/" alt="Projeto 4">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+                <!-- <div class="swiper-slide h-[85%]"><img src="./src/img/Myfood.JPG" ></div>
+                <div class="swiper-slide"><img src="caminho/para/imagem2.jpg" alt="Projeto 2"></div>
+                <div class="swiper-slide"><img src="caminho/para/imagem3.jpg" alt="Projeto 3"></div> -->
+                <!-- Adicione mais slides conforme necessário -->
             </div>
-
-            <!-- MOBILE -->
-            <div id="projetos-mobile" class="projetos-mobile w-full h-full flex flex-col  gap-2 hidden">
-                <div class="scroll-projetos-mobile horizontal left-0 absolute  gap-8 bottom-4 w-full pr-56 h-4/6 flex overflow-scroll snap-x max-[767px]:hidden min-[768px]:p-0 min-[1024px]:pl-44 min-[1024px]:pr-44 min-[1440px]:pl-56 min-[1440px]:pr-56">
-                    <img src="/src/img/Construction hat-pana.svg" alt="" class="absolute left-1/3 w-4/12 h-full drop-shadow-xl">
-                </div>
-            </div>
+            <!-- Navegação do slider -->
+            <div class="swiper-button-next text-lime-500 absolute z-20"></div>
+            <div class="swiper-button-prev text-lime-500 absolute z-20"></div>
         </div>
         
     </section>
@@ -271,5 +142,34 @@
     </script>
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Inicialize o Swiper
+        var swiper = new Swiper('.swiper-container', {
+            // Configurações do slider
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    
+        // Adicione os eventos de mouse para pausar e continuar o autoplay
+        swiper.el.onmouseover = function() {
+            swiper.autoplay.stop();
+        };
+    
+        swiper.el.onmouseout = function() {
+            swiper.autoplay.start();
+        };
+    </script>
+    
+    
 </body>
 </html>
