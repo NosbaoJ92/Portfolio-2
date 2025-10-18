@@ -1,175 +1,235 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="">
+<html lang="pt-br" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="/js/script.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css">
-    <title>Joabson Nogueira Dev</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <link rel="shortcut icon" href="/src/img/icone.png" type="image/png">
+    <title>Joabson Nogueira</title>
 </head>
-<body class="corpo w-screen h-screen relative bg-fixed bg-top bg-no-repeat overflow-x-hidden" style="background-image: url(/src/img/background.png)">
-    <section id="sec1" class="sec1 w-full h-dvh p-6 bg-fixed bg-right bg-no-repeat min-[768px]:p-16" style="background-image: url(/src/img/retrato.png)">
-        <div class="container-sup w-full h-full flex flex-col justify-between relative p-4">
-            <div class="textos-sup">
-                <h3 class="portifolio text-lime-400 text-xl font-semibold min-[768px]:text-3xl min-[1024px]:text-4xl min-[1024px]:font-bold">PORTFÓLIO</h3>
-                <h1 class="text-white text-4xl font-bold min-[768px]:text-6xl min-[1024px]:text-8xl">JOABSON <br> NOGUEIRA</h1>
-            </div>
-            <div class="links-end flex flex-col gap-10 pb-16 min-[768px]:pb-28 min-[1024px]:">
-                <div class="curriculum flex flex-col justify-center items-center gap-2">
-                    <a href="/src/docs/Curriculo - Joabson Nogueira de Oliveira.pdf" class="BtnCurriculum flex justify-center items-center bg-slate-50 w-56 h-16 hover:-translate-y-1 transition-all hover:border border-slate-950 hover:delay-75 hover:bg-lime-400 ease-in" download>
-                        <p class="text-xl font-semibold">CURRICULUM</p>
-                    </a>
-                    <a href="#sec4" class="text-white font-semibold">CONTATO</a>
+<body class="corpo w-screen h-screen overflow-visible relative bg-fixed bg-top bg-no-repeat overflow-x-hidden min-[1140px]:bg-cover" style="background-image: url(/src/img/background.png)">
+    <main class="conteudo-principal w-screen h-screen bg-fixed bg-right bg-no-repeat "  style="background-image: url(/src/img/retrato.png)">
+<!-- Start seção 1 -->
+        <section id="sec1" class="conteudo-principal w-full h-screen p-20 relative max-[767px]:p-0 max-[767px]:w-full" >
+            <div  class="">
+                <div class="textos flex flex-col w-full max-[767px]:pl-5">
+                    <h4 class=" text-lime-400 text-4xl font-bold ">PORTFÓLIO</h4>
+                    <h1 class="text-8xl text-white font-bold max-[767px]:text-6xl">
+                    JOABSON 
+                    <br>
+                    NOGUEIRA
+                    </h1>
                 </div>
-                <div class="links-social flex justify-center gap-3 min-[1024px]:absolute min-[1024px]:bottom-4 ">
-                    <a href="https://www.linkedin.com/in/joabson-nogueira-6a3489177/">
-                        <img class="w-8 hover:scale-125 transition-transform ease-in-out" src="/src/img/linkedin.svg" alt="">
-                    </a>
-                    <a href="https://www.instagram.com/front_joabsonnogueira/">
-                        <img class="w-8 hover:scale-125 transition-transform ease-in-out" src="/src/img/insta.svg" alt="">
-                    </a>
-                    <a href="https://github.com/NosbaoJ92">
-                        <img class="w-8 hover:scale-125 transition-transform ease-in-out" src="/src/img/github.svg" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="seta absolute w-full flex justify-center -bottom-5 left-0">
                 
-                <div class="seta w-8 bottom-4 right-4 max-[767px]:bg-stone-500 rounded-full ">
-                    <a href="#sec2"><img class="w-8 animate-bounce" src="/src/img/seta.svg" alt=""></a>
+                <div class="links-social flex gap-3 absolute bottom-20 max-[767px]:w-full max-[767px]:flex max-[767px]:justify-center max-[767px]:bottom-28">
+                    <a href="https://www.linkedin.com/in/joabson-nogueira-6a3489177/"><img class="w-8 hover:scale-125 transition-transform ease-in-out" src="/src/img/linkedin.svg" alt=""></a>
+                    <a href="https://www.instagram.com/front_joabsonnogueira/"><img class="w-8 hover:scale-125 transition-transform ease-in-out" src="/src/img/insta.svg" alt=""></a>
+                    <a href="https://github.com/NosbaoJ92"><img class="w-8 hover:scale-125 transition-transform ease-in-out" src="/src/img/github.svg" alt=""></a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="sec2" class="sec2 w-full h-dvh p-6 border-t border-b shadow-black shadow-md min-[768px]:p-16">
-        <!-- <img src="/src/img/Construction hat-pana.svg" alt="" class="absolute -bottom-8 left-1/3 w-4/12 h-full drop-shadow-xl"> -->
-        <div class="container w-full h-full flex justify-around relative gap-4">
             
-            <div class="formacao absolute left-0">
-                <h1 class="text-white text-4xl font-bold min-[768px]:text-6xl min-[1024px]:text-8xl">SOBRE</h1>
-                <h3 class="portifolio text-lime-400 text-xl font-semibold min-[768px]:text-3xl min-[1024px]:text-4xl">FORMAÇÃO E SKILLS</h3>
-            </div>
-           
-           
-        </div>       
-    </section>
-
-    <section id="sec3" class="sec3 w-full h-dvh p-6 relative min-[768px]:p-16">
-        <div class="formacao w-full h-1/6  min-[768px]:absolute z-20">
-            <h1 class="text-white text-4xl font-bold min-[768px]:text-6xl min-[1024px]:text-8xl">PROJETOS</h1>
-            <h3 class="portifolio text-lime-400 text-xl font-semibold min-[768px]:text-3xl min-[1024px]:text-4xl">DESENVOLVIDOS</h3>
+            <div class="curriculum flex flex-col gap-2 justify-center items-center w-full h-96 mt-16 max-[767px]:mt-36">
+                <a href="/src/docs/Curriculo - Joabson Nogueira de Oliveira.pdf" class="BtnCurriculum flex justify-center items-center bg-slate-50 w-56 h-16 hover:-translate-y-1 transition-all hover:border border-slate-950 hover:delay-75 hover:bg-lime-400 ease-in" download>
+                    <p class="text-xl font-semibold">CURRICULUM</p>
+                </a>
+                <a href="#sec3"><p class="text-white hover:text-lime-400 font-semibold hover:transition-all delay-125 hover:drop-shadow-xl">CONTATO</p></a>
+            </div>   
+        </section>
+        <div class="seta absolute w-full flex justify-center bottom-8">
+            <a href="#sec2"><img class="w-8 animate-bounce " src="/src/img/seta.svg" alt=""></a>
         </div>
-        
-        <div class="swiper-container ">
-            <div class="swiper-wrapper absolute h-screen">
-                <!-- Slides de imagens -->
-                <iframe href="https://neon-lamington-784d8a.netlify.app/" class="swiper-slide h-[85%] relative" src="https://neon-lamington-784d8a.netlify.app/" alt="Projeto 1">
-                    <p>Your browser does not support iframes.</p>
-                </iframe>
-                <iframe  class="swiper-slide h-[85%]" src="https://brunolicatearquitetura.com/" alt="Projeto 2">
-                    <p>Your browser does not support iframes.</p>
-                </iframe>
-                <iframe  class="swiper-slide h-[85%]" src="https://swift-cargo.netlify.app/" alt="Projeto 3">
-                    <p>Your browser does not support iframes.</p>
-                </iframe>
-                <iframe  class="swiper-slide h-[85%]" src="https://brunolicate-arquitetura.netlify.app/" alt="Projeto 3">
-                    <p>Your browser does not support iframes.</p>
-                </iframe>
-                
-                <iframe  class="swiper-slide h-[85%]" src="https://quizjessica.netlify.app/" alt="Projeto 4">
-                    <p>Your browser does not support iframes.</p>
-                </iframe>
-                <!-- <div class="swiper-slide h-[85%]"><img src="./src/img/Myfood.JPG" ></div>
-                <div class="swiper-slide"><img src="caminho/para/imagem2.jpg" alt="Projeto 2"></div>
-                <div class="swiper-slide"><img src="caminho/para/imagem3.jpg" alt="Projeto 3"></div> -->
-                <!-- Adicione mais slides conforme necessário -->
-            </div>
-            <!-- Navegação do slider -->
-            <div class="swiper-button-next text-lime-500 absolute z-20"></div>
-            <div class="swiper-button-prev text-lime-500 absolute z-20"></div>
-        </div>
-        
-    </section>
+<!-- End seção 1 -->  
 
-    <section id="sec4" class="w-full h-dvh relative p-6 bg-fixed bg-center bg-no-repeat min-[768px]:p-16 min-[1024px]:bg-contain min-[1024px]:bg-left" style="background-image: url(/src/img/retrato3.png)">
-        <div class="sec4 container p-4 w-full h-full flex flex-col justify-center items-center border rounded-2xl shadow-black shadow-md min-[768px]:p-16 min-[1024px]:absolute min-[1024px]:w-5/12  min-[1024px]:h-5/6 min-[1024px]:right-36">
-            <div class="contato justify-evenly items-center w-full h-full flex flex-col min-[768px]:gap-8">
-                <h1 class="text-white text-4xl font-bold">CONTATO</h1>
-                <form class="w-full flex flex-col justify-center gap-3 ">
-                    <div class="">
-                        <label for="email" class="label block text-sm font-medium text-gray-900 dark:text-lime-400">Email</label>
-                        <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-lime-400 focus:border-lime-400  block w-full p-2.5 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-400 dark:focus:border-lime-400 dark:shadow-sm-light" placeholder="seu-email@provedor.com" required>
+        <section id="sec-4" class="sobre w-full h-screen flex border border-lime-400">
+            <div id="sobre" class="textos flex flex-col w-full h-full pl-20 pt-8 absolute z-20">
+                <h1 class="text-8xl text-white font-bold">SOBRE</h1>
+                <h4 class=" text-lime-400 text-4xl font-bold">FORMAÇÃO E SKILLS</h4>
+                <!-- <p class="w-6/12 text-justify text-white text-lg">
+                Olá, me chamo <span class="text-lime-400">Joabson Nogueira</span>, sou da cidade de São Vicente/SP. <br>Atualmente estudante de Desenvolvimento de Sistemas, venho desenvolvendo alguns projetos voltados ao frontend e venho buscando sempre me aperfeiçoar com foco na recolocação no mercado de trabalho. <br>Principais Stacks: <span class="text-lime-400"> HTML</span> | <span class="text-lime-400">CSS</span> | <span class="text-lime-400">JavaScript</span> | <span class="text-lime-400">React Native</span> | <span class="text-lime-400">TailWind CSS</span> | <span class="text-lime-400">Laravel</span>.
+                </p>   -->
+                <div class="w-full h-full ">
+                    <!-- <iframe class="w-full h-full" src="/src/docs/CARD - LINKEDIN/card.html" frameborder="0"></iframe> -->
+                </div>
+            </div>
+        </section>
+
+<!-- Start seção 2 -->
+        <section id="sec2" class="w-full h-screen relative flex justify-center">
+            <div class="textos flex flex-col w-full pl-20 pt-8 absolute z-20 max-[767px]:p-5 max-[767px]:"> 
+                <h1 class="text-8xl text-white font-bold">PROJETOS</h1>
+                <h4 class=" text-lime-400 text-4xl font-bold">DESENVOLVIDOS</h4>
+                <div class="web-mobile w-full h-full flex">
+                    <div class="web w-full h-4/5 flex flex-col pt-6  gap-3">
+                        <p class="Skills border-r-2 whitespace-nowrap overflow-hidden typing-animation text-2xl font-bold text-zinc-200">
+                            <button id="AbrirWEB" class="hover:text-lime-400 transition-colors delay-75 " onclick="AbrirWEB()" >WEB</button> <span class="text-lime-400">|</span>
+                            <button id="AbrirMOBILE" class="hover:text-lime-400 transition-colors delay-75" onclick="AbrirMOBILE()" >MOBILE</button>
+                        </p>
                     </div>
-                    <div class="">
-                        <label for="telefone" class="label first-letter:block mb-2 text-sm font-medium text-gray-900 dark:text-lime-400">Telefone</label>
-                        <input type="tel" id="telefone" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-lime-400 focus:border-lime-400  block w-full p-2.5 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-400 dark:focus:border-lime-400 dark:shadow-sm-light" placeholder="Digite aqui seu telefone" required>
+                </div>
+            </div>
+            <div  class="scroll-container w-full h-full flex flex-col justify-evenly items-center gap-10 relative">
+
+                <!-- PROJETOS WEB -->
+                <div id="projetos-web" class="selecao hidden w-full h-full">
+                    <div class="flex flex-col w-full h-full relative ">
+                        <div class="scroll-projetos-web snap-y absolute relative z-30 top-60 left-20 w-64 flex flex-col gap-2 overflow-y-scroll overflow-x-hidden border border-lime-400 p-2">
+                            <button class="" onclick="AbrirArtefato()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36 hover:drop-shadow-xl hover:border-2 border-lime-400 transition-all delay-150" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt=""></button>
+                            <button class="" onclick="AbrirSwift()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36 hover:drop-shadow-xl hover:border-2 border-lime-400 transition-all delay-150" src="/src/img/swiftcargo.jpg" alt=""></button>                                                                                                        
+                            <button class="" onclick="AbrirMyFood()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36 hover:drop-shadow-xl hover:border-2 border-lime-400 transition-all delay-150" src="/src/img/Myfood.JPG" alt=""></button>      
+                            <button class="" onclick="AbrirArtefato()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36 hover:drop-shadow-xl hover:border-2 border-lime-400 transition-all delay-150" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt=""></button>
+                            <button class="" onclick="AbrirSwift()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36 hover:drop-shadow-xl hover:border-2 border-lime-400 transition-all delay-150" src="/src/img/swiftcargo.jpg" alt=""></button>                                                                                                        
+                            <button class="" onclick="AbrirMyFood()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36 hover:drop-shadow-xl hover:border-2 border-lime-400 transition-all delay-150" src="/src/img/Myfood.JPG" alt=""></button>      
+                                                                                                                             
+                        </div>
+                        <button id="closeProjetos" onclick="CloseProjetos()" class=" flex items-center justify-center text-xl w-28 h-6 bg-lime-400 font-bold absolute z-40 bottom-8 left-56 hover:bg-lime-200 transition-all delay-150">
+                                <p class="text-sm">FECHAR</p>
+                            </button> 
                     </div>
-                    <div class="">
-                        <label for="message" class="label first-letter:block mb-2 text-sm font-medium text-gray-900 dark:text-lime-400 ">Deixe sua mensagem</label>
-                        <input type="text" id="message" class="block mb-6 p-2.5 w-full  text-sm bg-gray-50 rounded border border-lime-400 focus:ring-lime-400 focus:border-lime-400 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-400 dark:focus:border-lime-400" placeholder="Digite aqui sua mensagem ou comentário..."></input>
+
+                    <!-- IFRAMES -->
+                    <div id="iframes" class="frames w-full h-full">
+                        <div id="artefato" class="iframe flex hidden border-4 border-lime-400 absolute z-30 right-24 bottom-14 w-8/12 h-3/4 justify-center  items-center gap-2 after:relative">
+                            <iframe class="w-full h-full grayscale hover:grayscale-0 transition-all delay-150" src="https://stunning-swan-8efa50.netlify.app/" frameborder="0">
+                            </iframe>
+                            <!-- LINK -->
+                            <div class="seta absolute z-10 bottom-1 left-1 w-8">
+                                <a href="https://stunning-swan-8efa50.netlify.app/" target="_blank" data-popover-target="popover-artefato" data-popover-placement="right"  class="w-full text-black text-xs flex justify-center p-2 bg-lime-400">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                                <div data-popover id="popover-artefato" role="tooltip" class="absolute z-20 invisible inline-block text-center w-16 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm opacity-0 dark:text-black dark:border-gray-600 dark:bg-white">
+                                    <div class="">
+                                        <p>Acessar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div id="swift" class="iframe flex hidden border-4 border-lime-400 absolute z-30 right-24 bottom-14 w-8/12 h-3/4 justify-center  items-center gap-2 after:relative">
+                            <iframe class="w-full h-full grayscale hover:grayscale-0 transition-all delay-150" src="https://swift-cargo.netlify.app/" frameborder="0">
+                            </iframe>
+                            <!-- LINK -->
+                            <div class="seta absolute z-10 bottom-1 left-1 w-8">
+                                <a href="https://swift-cargo.netlify.app/" target="_blank" data-popover-target="popover-artefato" data-popover-placement="right"  class="w-full text-black text-xs flex justify-center p-2 bg-lime-400">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                                <div data-popover id="popover-artefato" role="tooltip" class="absolute z-20 invisible inline-block text-center w-16 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm opacity-0 dark:text-black dark:border-gray-600 dark:bg-white">
+                                    <div class="">
+                                        <p>Acessar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div id="Myfood" class="iframe flex hidden border-4 border-lime-400 absolute z-30 right-24 bottom-14 w-8/12 h-3/4 justify-center  items-center gap-2 after:relative">
+                            <iframe class="w-full h-full grayscale hover:grayscale-0 transition-all delay-150" src="https://neon-lamington-784d8a.netlify.app/" frameborder="0">
+                            </iframe>
+                            <!-- LINK -->
+                            <div class="seta absolute z-10 bottom-1 left-1 w-8">
+                                <a href="https://neon-lamington-784d8a.netlify.app/" target="_blank" data-popover-target="popover-artefato" data-popover-placement="right"  class="w-full text-black text-xs flex justify-center p-2 bg-lime-400">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                                <div data-popover id="popover-artefato" role="tooltip" class="absolute z-20 invisible inline-block text-center w-16 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm opacity-0 dark:text-black dark:border-gray-600 dark:bg-white">
+                                    <div class="">
+                                        <p>Acessar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                         <!-- BOTÃO DE FECHAMENTO -->
+                        <button id="closeWEB" onclick="FecharWEB()" class="hidden text-xl bg-lime-400 w-10 h-10 flex items-center font-bold absolute z-40 top-24 right-14">
+                        <i class="fa-solid fa-xmark"></i>
+                        </button> 
                     </div>
+                  
+                </div>
+
+                <!-- PROJETOS MOBILE -->
+                <div id="projetos-mobile" class="selecao hidden w-full h-full">
+                    <div class="flex flex-col w-full h-full relative ">
+                        <div class="scroll-projetos-mobile snap-y absolute relative z-10 top-60 left-20 w-64 flex flex-col gap-3 overflow-y-scroll overflow-x-hidden border border-lime-400 p-2">
+                            <button class="" onclick="AbrirConstrucao()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36 hover:drop-shadow-xl hover:border-2 border-lime-400 transition-all delay-150" src="/src/img/contrução.png" alt=""></button>   
+                                                                                                                            
+                        </div>
+                        <button id="closeProjetos" onclick="CloseProjetos()" class=" flex items-center justify-center text-xl w-28 h-6 bg-lime-400 font-bold absolute z-40 bottom-8 left-56 hover:bg-lime-200 transition-all delay-150">
+                            <p class="text-sm">FECHAR</p>
+                        </button>   
+                    </div>
+
+                    <!-- IFRAME -->
+                    <div id="construcao" class="iframe flex hidden border-4 border-lime-400 absolute z-30 right-24 bottom-14 w-8/12 h-3/4 justify-center  items-center gap-2 after:relative">
+                        <iframe class="w-full h-full grayscale hover:grayscale-0 transition-all delay-150" src="/construcao.html" frameborder="0">
+                        </iframe>
+                        <!-- LINK -->
+                        <div class="seta absolute z-10 bottom-1 left-1 w-8">
+                            <a href="/construcao.html" target="_blank" data-popover-target="popover-artefato" data-popover-placement="right"  class="w-full text-black text-xs flex justify-center p-2 bg-lime-400">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <div data-popover id="popover-artefato" role="tooltip" class="absolute z-20 invisible inline-block text-center w-16 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm opacity-0 dark:text-black dark:border-gray-600 dark:bg-white">
+                                <div class="">
+                                    <p>Acessar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <!-- BOTÃO DE FECHAMENTO -->
+                    <button id="closeMOBILE" onclick="FecharMOBILE()" class="hidden text-xl bg-lime-400 w-10 h-10 flex items-center font-bold absolute z-40 top-24 right-14">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+<!-- End seção 2 --> 
+
+<!-- Start seção 3 -->
+        <section id="sec3" class="w-full h-screen bg-fixed bg-left bg-no-repeat relative  max-[767px]:m-0"  style="background-image: url(/src/img/retrato3.png)">
+            <div class="seta absolute z-10 right-8 bottom-8">
+                <a data-popover-target="popover-ultimo" data-popover-placement="left" type="button" href="#sec1"><img class="w-10 hover:scale-125 transition-transform" src="/src/img/seta1.svg" alt=""></a>
+                <div data-popover id="popover-ultimo" role="tooltip" class="absolute z-10 invisible inline-block text-center w-32 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                    <div class="px-3 py-2">
+                        <p>Voltar ao topo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form flex flex-col z-0 justify-center items-center border border-lime-400 absolute right-32 top-32 w-4/12 h-3/4 max-[767px]:w-full max-[767px]:right-0 max-[767px]:rounded-none  max-[767px]:h-full  max-[767px]:top-0 max-[767px]:border-none min-[768px]:w-8/12 min-[1200px]:w-5/12 ">
+                <h4 class=" text-white absolute top-12 text-4xl font-bold max-[767px]:top-44">CONTATO</h4> 
+                <form class="w-full flex flex-col justify-center p-36 max-[767px]:p-0  max-[767px]:w-10/12  max-[767px]:pt-36  max-[767px]:items-center">
+                    <div class="mb-6  max-[767px]:w-full">
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-lime-300">Email</label>
+                        <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-lime-300 focus:border-lime-300  block w-full p-2.5 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-300 dark:focus:border-lime-300 dark:shadow-sm-light" placeholder="seu-email@provedor.com" required>
+                    </div>
+                    <div class="mb-6 max-[767px]:w-full">
+                        <label for="telefone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-lime-300">Telefone</label>
+                        <input type="tel" id="telefone" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-lime-300 focus:border-lime-300  block w-full p-2.5 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-300 dark:focus:border-lime-300 dark:shadow-sm-light" placeholder="Digite aqui seu telefone" required>
+                    </div>
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-lime-300 ">Deixe sua mensagem</label>
+                    <input type="text" id="message" class="block mb-6 p-2.5 w-full  text-sm bg-gray-50 rounded border border-lime-300 focus:ring-lime-300 focus:border-lime-300 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-lime-300 dark:focus:border-lime-300" placeholder="Digite aqui sua mensagem ou comentário..."></input>
                     <button type="submit" class="BtnCurriculum p-2 bg-slate-50 w-56 hover:-translate-y-1 transition-all hover:border border-slate-950 hover:delay-75 hover:bg-lime-400 ease-in self-center mt-3 font-semibold">Enviar</button>
-                    </div>
                 </form>
-                <div class="links-social flex flex-col justify-center items-center gap-2">
-                    <p class="medias text-lime-400 drop-shadow-xl">Redes Sociais</p>
-                    <div class="links flex gap-3">
-                        <a href="https://www.linkedin.com/in/joabson-nogueira-6a3489177/"><img class="w-8 hover:scale-125 transition-transform ease-in-out	" src="/src/img/linkedin.svg" alt=""></a>
-                        <a href="https://www.instagram.com/front_joabsonnogueira/"><img class="w-8 hover:scale-125 transition-transform ease-in-out" src="/src/img/insta.svg" alt=""></a>
-                        <a href="https://github.com/NosbaoJ92"><img class="w-8 hover:scale-125 transition-transform ease-in-out" src="/src/img/github.svg" alt=""></a>
-                    </div>  
+                
+                <div class="links-social flex flex-col justify-center items-center gap-2 absolute bottom-10">
+                <p class="medias text-lime-400 drop-shadow-xl">Redes Sociais</p>
+                <div class="links flex gap-3">
+                    <a href="https://www.linkedin.com/in/joabson-nogueira-6a3489177/"><img class="w-8 hover:scale-125 transition-transform	" src="/src/img/linkedin.svg" alt=""></a>
+                    <a href="https://www.instagram.com/front_joabsonnogueira/"><img class="w-8 hover:scale-125 transition-transform" src="/src/img/insta.svg" alt=""></a>
+                    <a href="https://github.com/NosbaoJ92"><img class="w-8 hover:scale-125 transition-transform" src="/src/img/github.svg" alt=""></a>
                 </div>
-            </div>
-        </div>
-        <div class="seta absolute w-8 bottom-4 right-4  bg-black rounded-full min-[768px]:right-14 min-[768px]:bottom-10 hover:scale-125">
-            <a href="#sec1"><img class="w-full rotate-180" src="/src/img/seta.svg" alt="" data-popover-target="popover-voltar-topo" data-popover-placement="left"></a>
-            <div data-popover id="popover-voltar-topo" role="tooltip" class="absolute  z-20 invisible inline-block text-center w-28 text-xs text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm opacity-0 dark:text-black dark:border-gray-600 dark:bg-white max-[767px]:hidden">
-                <div class="p-2 w-full" >
-                    <p class="text-xs">Voltar ao topo</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script>
-             
-
-    </script>
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        // Inicialize o Swiper
-        var swiper = new Swiper('.swiper-container', {
-            // Configurações do slider
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    
-        // Adicione os eventos de mouse para pausar e continuar o autoplay
-        swiper.el.onmouseover = function() {
-            swiper.autoplay.stop();
-        };
-    
-        swiper.el.onmouseout = function() {
-            swiper.autoplay.start();
-        };
-    </script>
-    
-    
+                    
+                </div>   
+            </div> 
+        </section>
+<!-- End seção 3 --> 
+    </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="/js/script.js"></script>
 </body>
 </html>
