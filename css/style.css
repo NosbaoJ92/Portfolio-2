@@ -1,69 +1,64 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-html{
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+.BtnCurriculum:hover{
+    filter: drop-shadow(6px 6px #fff);
 }
 
-/* .swiper-slide {
-    height: 85%;
-} */
+.form {
+    background: rgba( 225, 225, 225, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba(23, 96, 23, 0.37);
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+}
+
+.typing-animation{
+    animation: 
+    blinkCursor 500ms infinite normal, 
+    typing 2s steps(24) 1s normal both;
+}
+
+@keyframes typing {
+   from {
+    width: 0;
+   }
+   to{
+    width: 170px;
+   }
+}
+
+@keyframes blinkCursor {
+   from {
+    border-right-color: rgba(255,255,255,0.75);
+   }
+   to{
+    border-right-color: transparent;
+   }
+}
+
+html{
+    scroll-snap-type: y mandatory;
+}
 
 section{
     scroll-snap-align: center;
 }
 
-.BtnCurriculum:hover{
-    filter: drop-shadow(6px 6px #fff);
+.scroll-projetos-web, .scroll-projetos-mobile{
+    height: 465px;
 }
-
-
-.sec2, .sec4 {
-    background: rgba(23, 23, 23, 0.418);
-    backdrop-filter: blur( 5px );
-    -webkit-backdrop-filter: blur( 1.5px );
-}
-
 
 .scroll-projetos-web::-webkit-scrollbar, .scroll-projetos-mobile::-webkit-scrollbar{ 
     display: none;
 }
 
-.label{
-    text-shadow: 1px 1px  5px black;
-}
-@media screen and (min-width: 768px){
-    .sec3::before, .sec3::after{
-    background: linear-gradient(to right, rgb(25,26,18)40%, rgba(255,255,255,0)100%);
-    content: '';
-    height: 100%;
-    position: absolute;
-    width: 50%;
-    z-index: 1;
+.sobre, .Github{
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
 }
 
-.sec3::before{
-    z-index: 20;
-    left: 0;
-    bottom: 0;
+.sobre{
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 1.5px );
 }
 
-.sec3::after{
-    visibility: hidden;
-    display: none;
-    z-index: -20;
-    right: 0;
-    bottom: 0;
-    transform: rotateZ(180deg);
-}
-}
-
-.cabecalho{
-    background-image: url('/src/img/back.jpg');
-    background-position: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
-    border-radius: 10px 10px 0 0;
-}
